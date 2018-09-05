@@ -253,24 +253,40 @@ Beginning of CV*/
  }
  
 .contentTable > tr,td {
- 	padding-top: 1%;
+	padding-top: 1%;
  	padding-bottom: 1%;
+ 	width: 70%;
+ 	/*border: 1px solid black;*/
  }
  
  /*################ skillMatrix ###############*/
  
-.skillMatrix {
-	display: grid;
-	grid-template-columns: auto auto auto auto;
+.skillTable {
 	width: 100%;
- }
- 
-.skillMatrix > .head {
- 	background-color: black;
- 	color: #00cc00;
- 	padding-left: 1%;
- 	border: 1px solid green;
- }
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin-bottom: 1%;
+}
 
+.skillTable th,
+.skillTable tr,
+.skillTable td {
+	border: 1px solid black;
+	
+}
  
- 
+.skillTable td {
+	width: 25%;
+	padding-left: 1%;
+	text-align: center;
+}
+
+.skillTable th {
+	padding: 1%;
+	background-color: black;
+	color: #00cc00;
+}
+
+.cat1 {
+	background-color: #dddddd;
+}
