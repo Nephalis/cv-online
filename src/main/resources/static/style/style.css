@@ -129,7 +129,7 @@ body {
 	positon: absolute;
 }
 
-.welcomePanel > p{
+.welcomePanel p{
 	padding: 5px;
 	font-size: 15;
 }
@@ -174,7 +174,7 @@ body {
 	margin-right: 25%;
 	margin-bottom: 20%;
 	margin-top: 2%;
-	grid-template-columns: 33% 33% 33%;
+	grid-template-columns: 33.3% 33.3% 33.3%;
 	grid-column-start: 1;
 	grid-column-end: 4;
 	/*background-color: red;*/
@@ -182,7 +182,8 @@ body {
 }
 
 .additionalContentGrid > div {
-	height: 75px;
+	height: 125%;
+	/*border: 1px solid black;*/
 }
 
 .aboutMeBox {
@@ -202,6 +203,19 @@ body {
 	color: #00cc00;
 	background-color: black;
 	
+}
+
+button {
+	height: 35%;
+	width: 35%;
+	border-radius: 15px;
+	border: 1px solid black;
+	background-color: white;
+}
+
+button:hover {
+	background-color: black;
+	color: #00cc00;
 }
 
 /*End of Index
@@ -252,11 +266,10 @@ Beginning of CV*/
  	width: 100%;
  }
  
-.contentTable > tr,td {
+.contentTable td {
 	padding-top: 1%;
  	padding-bottom: 1%;
  	width: 70%;
- 	/*border: 1px solid black;*/
  }
  
  /*################ skillMatrix ###############*/
