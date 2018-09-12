@@ -186,6 +186,11 @@ body {
 	/*border: 1px solid black;*/
 }
 
+/*
+.additionalContentGrid p {
+	border: 1px solid black;
+}
+*/
 .aboutMeBox {
 	border-left: 1px solid #555;
 	border-right: 1px solid #555; 
@@ -216,6 +221,29 @@ button {
 button:hover {
 	background-color: black;
 	color: #00cc00;
+}
+
+.toolTipLinkedIn .toolTipTextLinkedIn{
+	visibility: hidden;
+	width: 120px;
+    background-color: black;
+    color: #00cc00;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 3;
+}
+
+.toolTipLinkedIn:hover .toolTipTextLinkedIn {
+	visibility: visible;
+	transition-delay:2s;
+}
+
+.githubLink {
+	width: 50%;
 }
 
 /*End of Index
