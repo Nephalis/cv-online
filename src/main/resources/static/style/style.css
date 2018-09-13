@@ -102,7 +102,7 @@ body {
 .gridContIndex {
 	display: grid;
 	/*so viele werte eingegeben werden, so viele Spalten gibt es.*/
-	/*auto legt in diesem fall die breite der Spalten fest. Alternativ k�nnen auch feste Werte eingetragen werden*/
+	/*auto legt in diesem fall die breite der Spalten fest. Alternativ können auch feste Werte eingetragen werden*/
 	/*grid-template-columns: 300px 400px 174px;*/
 	grid-template-columns: 37.5% 40% 20%;
 	grid-gap: 10px;
@@ -331,3 +331,57 @@ Beginning of CV*/
 .cat1 {
 	background-color: #dddddd;
 }
+
+ /*################ Persönliches ###############*/
+
+ .gridContPerso {
+	display: grid;
+	grid-template-rows: auto auto auto auto;
+	grid-template-columns: 50% 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 115px;
+	grid-row-gap: 12.5px;
+	grid-column-gap: 15px;
+
+ }
+ 
+ /*
+ .gridContPerso div{
+ 	border: 1px solid black;
+ }
+ */
+ 
+ .textpanelType1 {
+ 	grid-column-start: 2;
+ 	grid-column-end: 3;
+ 	padding-left: 5%;
+ 	padding-right: 5%;
+  }
+  
+ .pictype1 img {
+ 	width: 100%;
+ }
+ 
+ .textpanelType2 {
+ 	grid-column-start: 1;
+ 	grid-column-end: 2;
+ 	padding-left: 5%;
+ 	padding-right: 5%;
+ }
+ 
+ .pictype2 img {
+ 	width: 100%;
+ } 
+ 
+ hr {
+ 	margin-left: -5%;
+ 	margin-right: -5%;
+ 	grid-column-start: 1;
+ 	grid-column-end: 3;
+ }
+
+ .credit {
+ 	color: lightgrey;
+ 	font-size: 70%;
+ }

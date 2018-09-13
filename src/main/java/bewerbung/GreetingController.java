@@ -31,4 +31,9 @@ public class GreetingController {
     public String lebenslauf(Model model) {
     	return "lebenslauf";    	
     }
+    
+    @GetMapping("/personal")
+    public String persoenliches(Model model) {
+    	return "personal";    	
+    }
 }
