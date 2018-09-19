@@ -130,18 +130,18 @@ body {
 }
 
 .welcomePanel p{
-	padding: 5px;
+	padding: 5px; 
 	font-size: 15;
 }
 
-.welcomePanel > h1 {
+.welcomePanel h1 {
 	color: #72ab00;
 	font-size: 45px;
 	margin: 5px;
 	/*text-shadow: 0px 0px 1px black;*/
 }
 
-.welcomePanel > h3 {
+.welcomePanel h3 {
 	color: #72ab00;
 	font-size: 20px;
 	margin: 5px;	
@@ -345,34 +345,43 @@ Beginning of CV*/
 	grid-column-gap: 15px;
 
  }
- 
- /*
+/*
  .gridContPerso div{
  	border: 1px solid black;
  }
- */
- 
+*/
  .textpanelType1 {
  	grid-column-start: 2;
  	grid-column-end: 3;
  	padding-left: 5%;
  	padding-right: 5%;
+ 	margin: auto;
   }
-  
- .pictype1 img {
- 	width: 100%;
- }
  
  .textpanelType2 {
  	grid-column-start: 1;
  	grid-column-end: 2;
  	padding-left: 5%;
  	padding-right: 5%;
+ 	margin: auto;
  }
  
+ .pictype1 img,
  .pictype2 img {
  	width: 100%;
- } 
+ }
+ 
+ .textpanelType1 p,
+ .textpanelType2 p {
+ 	margin-top: 1%;
+ }
+ 
+ .textpanelType1 p:first-letter,
+ .textpanelType2 p:first-letter {
+ 	color: #72ab00;
+	font-size: 25px;
+ }
+ 
  
  hr {
  	margin-left: -5%;
@@ -385,3 +394,5 @@ Beginning of CV*/
  	color: lightgrey;
  	font-size: 70%;
  }
+ 
+ 
