@@ -16,11 +16,10 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class GreetingController {
 	
-	@RequestMapping(value = "/static/index.html", method = RequestMethod.GET)
-	@ResponseBody
-	public String getFoosBySimplePath() {
-	    return "home";
-	}
+	@GetMapping("/home")
+    public String home(Model model) {
+    	return "index";    	
+    }
 	
     @GetMapping("/greeting")
     public String greeting(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
@@ -31,5 +30,10 @@ public class GreetingController {
     @GetMapping("/lebenslauf")
     public String lebenslauf(Model model) {
     	return "lebenslauf";    	
+    }
+    
+    @GetMapping("/personal")
+    public String persoenliches(Model model) {
+    	return "personal";    	
     }
 }

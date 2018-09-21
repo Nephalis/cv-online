@@ -102,7 +102,7 @@ body {
 .gridContIndex {
 	display: grid;
 	/*so viele werte eingegeben werden, so viele Spalten gibt es.*/
-	/*auto legt in diesem fall die breite der Spalten fest. Alternativ k�nnen auch feste Werte eingetragen werden*/
+	/*auto legt in diesem fall die breite der Spalten fest. Alternativ können auch feste Werte eingetragen werden*/
 	/*grid-template-columns: 300px 400px 174px;*/
 	grid-template-columns: 37.5% 40% 20%;
 	grid-gap: 10px;
@@ -129,19 +129,19 @@ body {
 	positon: absolute;
 }
 
-.welcomePanel > p{
-	padding: 5px;
+.welcomePanel p{
+	padding: 5px; 
 	font-size: 15;
 }
 
-.welcomePanel > h1 {
+.welcomePanel h1 {
 	color: #72ab00;
 	font-size: 45px;
 	margin: 5px;
 	/*text-shadow: 0px 0px 1px black;*/
 }
 
-.welcomePanel > h3 {
+.welcomePanel h3 {
 	color: #72ab00;
 	font-size: 20px;
 	margin: 5px;	
@@ -174,7 +174,7 @@ body {
 	margin-right: 25%;
 	margin-bottom: 20%;
 	margin-top: 2%;
-	grid-template-columns: 33% 33% 33%;
+	grid-template-columns: 33.3% 33.3% 33.3%;
 	grid-column-start: 1;
 	grid-column-end: 4;
 	/*background-color: red;*/
@@ -182,15 +182,40 @@ body {
 }
 
 .additionalContentGrid > div {
-	height: 75px;
+	height: 125%;
+	/*border: 1px solid black;*/
 }
 
+#persoLink2{
+	color: #72ab00;
+	font-size: 15px;
+	margin: auto;
+}
+
+/*
+.additionalContentGrid p {
+	border: 1px solid black;
+}
+*/
 .aboutMeBox {
 	border-left: 1px solid #555;
 	border-right: 1px solid #555; 
 }
 
 .footer {
+	display: grid;
+	grid-template-columns: auto;
+	/*position: fixed;*/
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2.5%;
+	text-align: center;
+	color: #00cc00;
+	background-color: black;
+}
+
+.footer#indexFooter{
 	display: grid;
 	grid-template-columns: auto;
 	position: fixed;
@@ -201,7 +226,42 @@ body {
 	text-align: center;
 	color: #00cc00;
 	background-color: black;
-	
+}
+
+button {
+	height: 35%;
+	width: 35%;
+	border-radius: 15px;
+	border: 1px solid black;
+	background-color: white;
+}
+
+button:hover {
+	background-color: black;
+	color: #00cc00;
+}
+
+.toolTipLinkedIn .toolTipTextLinkedIn{
+	visibility: hidden;
+	width: 120px;
+    background-color: black;
+    color: #00cc00;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 3;
+}
+
+.toolTipLinkedIn:hover .toolTipTextLinkedIn {
+	visibility: visible;
+	transition-delay:2s;
+}
+
+.githubLink {
+	width: 50%;
 }
 
 /*End of Index
@@ -252,11 +312,10 @@ Beginning of CV*/
  	width: 100%;
  }
  
-.contentTable > tr,td {
+.contentTable td {
 	padding-top: 1%;
  	padding-bottom: 1%;
  	width: 70%;
- 	/*border: 1px solid black;*/
  }
  
  /*################ skillMatrix ###############*/
@@ -290,3 +349,68 @@ Beginning of CV*/
 .cat1 {
 	background-color: #dddddd;
 }
+
+ /*################ Persönliches ###############*/
+
+ .gridContPerso {
+	display: grid;
+	grid-template-rows: auto auto auto auto;
+	grid-template-columns: 50% 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 115px;
+	grid-row-gap: 12.5px;
+	grid-column-gap: 15px;
+
+ }
+/*
+ .gridContPerso div{
+ 	border: 1px solid black;
+ }
+*/
+ .textpanelType1 {
+ 	grid-column-start: 2;
+ 	grid-column-end: 3;
+ 	padding-left: 5%;
+ 	padding-right: 5%;
+ 	margin: auto;
+  }
+ 
+ .textpanelType2 {
+ 	grid-column-start: 1;
+ 	grid-column-end: 2;
+ 	padding-left: 5%;
+ 	padding-right: 5%;
+ 	margin: auto;
+ }
+ 
+ .pictype1 img,
+ .pictype2 img {
+ 	width: 100%;
+ }
+ 
+ .textpanelType1 p,
+ .textpanelType2 p {
+ 	margin-top: 1%;
+ }
+ 
+ .textpanelType1 p:first-letter,
+ .textpanelType2 p:first-letter {
+ 	color: #72ab00;
+	font-size: 25px;
+ }
+ 
+ 
+ hr {
+ 	margin-left: -5%;
+ 	margin-right: -5%;
+ 	grid-column-start: 1;
+ 	grid-column-end: 3;
+ }
+
+ .credit {
+ 	color: lightgrey;
+ 	font-size: 70%;
+ }
+ 
+ 
